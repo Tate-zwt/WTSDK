@@ -51,12 +51,12 @@ static const void *failBlockKey = &failBlockKey;
 /**
  *  按比例 质量 重设图片大小
  */
-- (UIImage *)resize_Quality:(CGInterpolationQuality)quality Rate:(CGFloat)rate;
+- (UIImage *)resize_Quality:(CGInterpolationQuality)quality rate:(CGFloat)rate;
 
 /**
  *  保存到指定相册名字
  */
-- (void)savedToAlbum_AlbumName:(NSString *)AlbumName sucBlack:(void (^)())completeBlock failBlock:(void (^)())failBlock;
+- (void)savedToAlbum_AlbumName:(NSString *)albumName sucBlack:(void (^)())completeBlock failBlock:(void (^)())failBlock;
 
 /**
  *  保存到相册

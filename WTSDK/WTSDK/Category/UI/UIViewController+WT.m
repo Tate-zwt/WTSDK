@@ -38,7 +38,7 @@ static const void *HttpRequestHUDKey = &HttpRequestHUDKey;
 }
 
 /**
- *  self.Nav 默认动画 pushViewController:vc animated:YES
+ *  self.nav 默认动画 pushViewController:vc animated:YES
  */
 - (void)pushVc:(UIViewController *)vc {
     [self.nav pushViewController:vc animated:YES];

@@ -31,7 +31,7 @@
     return [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:self options:0 error:NULL] encoding:NSUTF8StringEncoding];
 }
 /**
- *  合并成用，逗号隔开的字符创
+ *  根据一个字符串来将数组连接成一个新的字符串，这里根据逗号
  */
 - (NSString *)combinStr {
     return [self componentsJoinedByString:@","];
@@ -69,7 +69,7 @@
 }
 
 /**
- *  数据计算差集
+ *  数组计算差集
  */
 - (NSArray *)arrayForMinusWithOtherArray:(NSArray *)otherArray {
     if (self == nil) return nil;
@@ -78,7 +78,7 @@
     //遍历
     for (id obj in otherArray) {
         if (![self containsObject:obj]) continue;
-        //添加
+        //移除
         [minusArray removeObject:obj];
     }
     return minusArray;

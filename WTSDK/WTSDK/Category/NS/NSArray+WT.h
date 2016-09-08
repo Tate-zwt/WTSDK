@@ -25,7 +25,7 @@
  */
 @property (nonatomic, copy, readonly) NSString *jsonStr;
 /**
- *  合并成用，逗号隔开的字符创
+ *  根据一个字符串来将数组连接成一个新的字符串，这里根据逗号
  */
 @property (nonatomic, copy, readonly) NSString *combinStr;
 /**
@@ -44,7 +44,7 @@
 - (NSArray *)arrayForIntersectionWithOtherArray:(NSArray *)otherArray;
 
 /**
- *  数据计算差集
+ *  数组计算差集
  */
 - (NSArray *)arrayForMinusWithOtherArray:(NSArray *)otherArray;
 

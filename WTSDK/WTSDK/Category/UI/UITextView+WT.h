@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UITextView (WT)
+/** 插入NSAttributedString */
 - (void)insertAttributedText:(NSAttributedString *)text;
 - (void)insertAttributedText:(NSAttributedString *)text settingBlock:(void (^)(NSMutableAttributedString *attributedText))settingBlock;
 @end

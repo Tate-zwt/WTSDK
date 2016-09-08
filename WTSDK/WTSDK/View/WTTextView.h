@@ -48,10 +48,13 @@
  *  强制按text.length长度计算限制文本的最大长度
  */
 @property (nonatomic, assign) NSUInteger maxTextLength;
-@property (nonatomic, assign, getter=isShowToolBar) BOOL showToolBar;       /**< 显示ToolBar */
-@property (nonatomic, assign, getter=isReturnToresign) BOOL returnToresign; /**< 点换行是取消响应 */
+/** 显示ToolBar */
+@property (nonatomic, assign, getter=isShowToolBar) BOOL showToolBar;
+/** 点换行是取消响应 */
+@property (nonatomic, assign, getter=isReturnToresign) BOOL returnToresign;
 @property (nonatomic, strong) UIToolbar *toolbar;
-@property (nonatomic, assign, getter=isDisabelEmoji) BOOL disabelEmoji; /**< 禁止使用表情字符 */
+/** 禁止使用表情字符 */
+@property (nonatomic, assign, getter=isDisabelEmoji) BOOL disabelEmoji;
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text;
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView;

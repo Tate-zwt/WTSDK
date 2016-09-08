@@ -65,13 +65,15 @@
 }
 
 /** 字符时间戳 */
-- (NSString *)timeStamp {
+- (NSString *)timeStampStr {
     return [@([self timeIntervalSince1970]).stringValue copy];
 }
-
-//-(long)timeStamp{
-//    return [self timeIntervalSince1970];
-//}
+/**
+ *  长型时间戳
+ */
+- (double)timeStamp{
+    return [self timeIntervalSince1970];
+}
 
 /*
  *  时间成分
@@ -138,7 +140,7 @@
     return components;
 }
 
-/****************************************************
+/**
  *@Description:根据年份、月份、日期、小时数、分钟数、秒数返回NSDate
  *@Params:
  *  year:年份
@@ -147,8 +149,8 @@
  *  hour:小时数
  *  minute:分钟数
  *  second:秒数
- *@Return:
- ****************************************************/
+ *  @return:
+ */
 + (NSDate *)dateWithYear:(NSUInteger)year
                    Month:(NSUInteger)month
                      Day:(NSUInteger)day
@@ -166,11 +168,11 @@
     return [[NSCalendar currentCalendar] dateFromComponents:dateComponents];
 }
 
-/****************************************************
+/**
  *@Description:实现dateFormatter单例方法
  *@Params:nil
  *Return:相应格式的NSDataFormatter对象
- ****************************************************/
+ */
 + (NSDateFormatter *)defaultDateFormatterWithFormatYYYYMMddHHmmss {
     static NSDateFormatter *staticDateFormatterWithFormatYYYYMMddHHmmss;
     if (!staticDateFormatterWithFormatYYYYMMddHHmmss) {

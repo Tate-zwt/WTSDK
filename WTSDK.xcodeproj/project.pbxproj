@@ -31,6 +31,7 @@
 		57C10D1C1C20F61F00511EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C10D1A1C20F61F00511EBC /* Main.storyboard */; };
 		57C10D1E1C20F61F00511EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C10D1D1C20F61F00511EBC /* Assets.xcassets */; };
 		57C10D211C20F61F00511EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C10D1F1C20F61F00511EBC /* LaunchScreen.storyboard */; };
+		689A5B581D816677008D9ECB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689A5B571D816677008D9ECB /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,8 @@
 		57C10D1D1C20F61F00511EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57C10D201C20F61F00511EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57C10D221C20F61F00511EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689A5B561D816677008D9ECB /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		689A5B571D816677008D9ECB /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +211,8 @@
 				57C10D151C20F61F00511EBC /* AppDelegate.m */,
 				57C10D171C20F61F00511EBC /* ViewController.h */,
 				57C10D181C20F61F00511EBC /* ViewController.m */,
+				689A5B561D816677008D9ECB /* TestViewController.h */,
+				689A5B571D816677008D9ECB /* TestViewController.m */,
 				57C10D1A1C20F61F00511EBC /* Main.storyboard */,
 				57C10D1D1C20F61F00511EBC /* Assets.xcassets */,
 				57C10D1F1C20F61F00511EBC /* LaunchScreen.storyboard */,
@@ -320,6 +325,7 @@
 				576E1D971C55D19B004342C5 /* UILabel+WT.m in Sources */,
 				576E1D9C1C55D19B004342C5 /* UIViewController+WT.m in Sources */,
 				576E1D921C55D19B004342C5 /* UIButton+WT.m in Sources */,
+				689A5B581D816677008D9ECB /* TestViewController.m in Sources */,
 				57C10D131C20F61F00511EBC /* main.m in Sources */,
 				576E1DAB1C55D19B004342C5 /* WTTextView.m in Sources */,
 				576E1DA31C55D19B004342C5 /* WTUtility.m in Sources */,

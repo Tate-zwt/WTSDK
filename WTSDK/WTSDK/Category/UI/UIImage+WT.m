@@ -74,12 +74,12 @@
  *  按比例 重设图片大小
  */
 - (UIImage *)resize_Rate:(CGFloat)rate {
-    return [self resize_Quality:kCGInterpolationNone Rate:rate];
+    return [self resize_Quality:kCGInterpolationNone rate:rate];
 }
 /**
  *  按比例 质量 重设图片大小
  */
-- (UIImage *)resize_Quality:(CGInterpolationQuality)quality Rate:(CGFloat)rate {
+- (UIImage *)resize_Quality:(CGInterpolationQuality)quality rate:(CGFloat)rate {
     UIImage *resized = nil;
     CGFloat width = self.size.width * rate;
     CGFloat height = self.size.height * rate;
@@ -150,7 +150,7 @@
 /**
  *  保存到指定相册名字
  */
-- (void)savedToAlbum_AlbumName:(NSString *)AlbumName sucBlack:(void (^)())completeBlock failBlock:(void (^)())failBlock {
+- (void)savedToAlbum_AlbumName:(NSString *)albumName sucBlack:(void (^)())completeBlock failBlock:(void (^)())failBlock {
     ALAssetsLibrary *ass = [[ALAssetsLibrary alloc] init];
     [ass writeImageToSavedPhotosAlbum:self.CGImage orientation:(ALAssetOrientation) self.imageOrientation completionBlock:^(NSURL *assetURL, NSError *error) {
         __block BOOL albumWasFound = NO;
@@ -158,7 +158,7 @@
         //search all photo albums in the library
         [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
             //判断相册是否存在
-            if ([AlbumName compare:[group valueForProperty:ALAssetsGroupPropertyName]] == NSOrderedSame) {
+            if ([albumName compare:[group valueForProperty:ALAssetsGroupPropertyName]] == NSOrderedSame) {
                 //存在
                 albumWasFound = YES;
                 [assetsLibrary assetForURL:assetURL resultBlock:^(ALAsset *asset) {
@@ -175,7 +175,7 @@
             if (group == nil && albumWasFound == NO) {
                 __weak ALAssetsLibrary *weakSelf = assetsLibrary;
                 //创建相册
-                [assetsLibrary addAssetsGroupAlbumWithName:AlbumName resultBlock:^(ALAssetsGroup *group) {
+                [assetsLibrary addAssetsGroupAlbumWithName:albumName resultBlock:^(ALAssetsGroup *group) {
                     [weakSelf assetForURL:assetURL
                               resultBlock:^(ALAsset *asset) {
                                   if ([group addAsset:asset]) {

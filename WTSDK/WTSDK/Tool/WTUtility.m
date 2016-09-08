@@ -130,7 +130,7 @@ void WTUseTime(void (^block)(void)) {
 /**
  *  代码执行时间(循环XXXXX次)
  */
-void Code_RunTime(int times, void (^block)(void)) {
+void code_RunTime(int times, void (^block)(void)) {
     int TureTime = times ? times : 10000;
     WTUseTime(^{
         for (int i = 0; i < TureTime; i++) {

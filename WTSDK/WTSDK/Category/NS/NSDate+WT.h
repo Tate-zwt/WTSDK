@@ -23,12 +23,12 @@
 - (BOOL)isToday;
 
 /** 字符串时间戳。 */
-@property (nonatomic, copy, readonly) NSString *timeStamp;
+@property (nonatomic, copy, readonly) NSString *timeStampStr;
 
 /**
  *  长型时间戳
  */
-//@property (nonatomic, assign, readonly) long timeStamp;
+@property (nonatomic, assign, readonly) double timeStamp;
 
 /**
  *  时间成分
