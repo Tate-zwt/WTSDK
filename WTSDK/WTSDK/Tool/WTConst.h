@@ -1,4 +1,4 @@
-
+//  GitHub: https://github.com/Tate-zwt/WTSDK
 #ifdef DEBUG //处于开发阶段
 #define NSLog(...) NSLog(@"%s %d\n %@\n\n", __func__, __LINE__, [NSString stringWithFormat:__VA_ARGS__])
 #else //处于发布阶段

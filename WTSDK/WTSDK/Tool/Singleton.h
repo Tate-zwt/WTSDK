@@ -1,3 +1,4 @@
+//  GitHub: https://github.com/Tate-zwt/WTSDK
 // .h
 #define singleton_interface(class) +(instancetype) shared##class;
 
