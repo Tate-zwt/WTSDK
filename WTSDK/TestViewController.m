@@ -20,6 +20,9 @@
     [super viewDidLoad];
     NSString *htmlStr = @"<div>Tate<span style='color:#1C86EE;'>《WTSDK》</span> <span style='color:#1C86EE;'>Tate_zwt</span> star <span style='color:#FF3E96;'>源码在WTSDK文件夹里，如果你觉得不错的话，麻烦在GitHub上面点个Star，thank you all!";
     [_htmlLabel htmlString:htmlStr];
+    [_htmlLabel tapGesture:^(UIGestureRecognizer *ges) {
+        NSLog(@"我被触发了");
+    } numberOfTapsRequired:3];
     
     [_htmlHeightLabel htmlString:htmlStr labelRowOfHeight:12];
 }

@@ -248,12 +248,7 @@ CGRect CGRectMoveToCenter(CGRect rect, CGPoint center) {
     self.layer.shadowPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, self.height - 2, self.width == 320 ? [UIScreen mainScreen].bounds.size.width : self.width, 2)].CGPath;
 }
 
-//单点击手势
-- (void)tapGesture_T:(id)target S:(SEL)action {
-    UITapGestureRecognizer *TapGesture = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
-    self.userInteractionEnabled = YES;
-    [self addGestureRecognizer:TapGesture];
-}
+
 /** 添加边框:四边 */
 - (void)border:(UIColor *)color width:(CGFloat)width CornerRadius:(CGFloat)radius {
     if (radius == 0) {
@@ -329,6 +324,19 @@ static char kActionHandlerLongPressGestureKey;
     }
     objc_setAssociatedObject(self, &kActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
 }
+//有次数的单击手势
+- (void)tapGesture:(GestureActionBlock)block numberOfTapsRequired:(NSUInteger)tapsCount {
+    self.userInteractionEnabled = YES;
+    UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &kActionHandlerTapGestureKey);
+    if (!gesture) {
+        gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForTapGesture:)];
+        gesture.numberOfTapsRequired = tapsCount;
+        [self addGestureRecognizer:gesture];
+        objc_setAssociatedObject(self, &kActionHandlerTapGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
+    }
+    objc_setAssociatedObject(self, &kActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
+}
+
 
 - (void)handleActionForTapGesture:(UITapGestureRecognizer *)gesture {
     if (gesture.state == UIGestureRecognizerStateRecognized) {

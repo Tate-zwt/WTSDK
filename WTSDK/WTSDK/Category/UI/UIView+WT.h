@@ -47,6 +47,8 @@ CGRect CGRectMoveToCenter(CGRect rect, CGPoint center);
 typedef void (^GestureActionBlock)(UIGestureRecognizer *ges);
 /** 单点击手势 */
 - (void)tapGesture:(GestureActionBlock)block;
+/** 有次数的单击手势 tapsCount:点击次数*/
+- (void)tapGesture:(GestureActionBlock)block numberOfTapsRequired:(NSUInteger)tapsCount;
 /** 长按手势 */
 - (void)longPressGestrue:(GestureActionBlock)block;
 
