@@ -78,4 +78,7 @@ void after_Run(float time, void (^block)(void));
  */
 + (BOOL)canUseCamera;
 
+/** 根据UIImage压缩后的NSDate第一个字节返回对应的图片类型 */
++ (NSString *)typeForImageData:(NSData *)data;
+
 @end

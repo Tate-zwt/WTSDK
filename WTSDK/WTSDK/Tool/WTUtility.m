@@ -249,4 +249,28 @@ void after_Run(float time, void (^block)(void)) {
     return YES;
 }
 
+/** 根据UIImage压缩后的NSDate第一个字节返回对应的图片类型 */
++ (NSString *)typeForImageData:(NSData *)data {
+    uint8_t c;
+    [data getBytes:&c length:1];
+    switch (c) {
+            
+        case 0xFF:
+            return @"image/jpeg";
+            
+        case 0x89:
+            return @"image/png";
+            
+        case 0x47:
+            return @"image/gif";
+            
+        case 0x49:
+        case 0x4D:
+            return @"image/tiff";
+    }
+    
+    return nil;
+}
+
+
 @end
