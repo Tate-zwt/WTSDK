@@ -81,4 +81,10 @@ void after_Run(float time, void (^block)(void));
 /** 根据UIImage压缩后的NSDate第一个字节返回对应的图片类型 */
 + (NSString *)typeForImageData:(NSData *)data;
 
+/** 返回文件大小 */
++ (float)calculateFileSizeInUnit:(unsigned long long)contentLength;
+
+/** 返回文件大小的单位 */
++ (NSString *)calculateUnit:(unsigned long long)contentLength;
+
 @end
