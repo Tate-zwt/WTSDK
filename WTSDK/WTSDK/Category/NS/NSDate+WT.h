@@ -35,6 +35,8 @@
  */
 @property (nonatomic, strong, readonly) NSDateComponents *components;
 
+/** 比较两个日期的大小  0 : 相同  1 : oneDay 大  2 : anotherDay 大*/
++ (NSInteger)compareOneDay:(NSDate *)oneDay withAnotherDay:(NSDate *)anotherDay;
 /**
  *  两个时间比较
  *
