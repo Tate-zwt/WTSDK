@@ -80,6 +80,11 @@
 /** SHA1加密 */
 @property (nonatomic, copy, readonly) NSString *SHA1;
 
+/** URLencode */
+@property (nonatomic, copy, readonly) NSString *encodeString;
+/** URLdecode */
+@property (nonatomic, copy, readonly) NSString *decodeString;
+
 #pragma mark - function😂
 /** 适合的高度 默认 font 宽  */
 - (CGFloat)heightWithFont:(NSInteger)font w:(CGFloat)w;
