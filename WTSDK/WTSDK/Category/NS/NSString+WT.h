@@ -94,6 +94,8 @@
 
 /** 根据字体大小与最大宽度 返回对应的size*/
 - (CGSize)sizeWithFont:(UIFont *)font maxW:(CGFloat)maxW;
+/** 计算富(有间距)文本的NSString高度 */
+- (CGFloat)sizeWithFont:(UIFont *)font maxW:(CGFloat)maxW lineSpacing:(NSInteger)lineSpacing;
 /** 根据字体大小 返回对应的size*/
 - (CGSize)sizeWithFont:(UIFont *)font;
 

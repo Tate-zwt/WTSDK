@@ -83,8 +83,24 @@
     CGSize maxSize = CGSizeMake(maxW, MAXFLOAT);
 
     NSLog(@"IOS7以上的系统");
-    return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
+    return [self boundingRectWithSize:maxSize options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesFontLeading  |NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
 }
+
+/** 计算富(有间距)文本的NSString高度 */
+- (CGFloat)sizeWithFont:(UIFont *)font maxW:(CGFloat)maxW lineSpacing:(NSInteger)lineSpacing{
+    NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:lineSpacing];
+    NSDictionary *attributeDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   font,NSFontAttributeName,
+                                   paragraphStyle,NSParagraphStyleAttributeName,nil];
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(maxW, MAXFLOAT)//限制最大的宽度和高度
+                                     options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesFontLeading  |NSStringDrawingUsesLineFragmentOrigin//采用换行模式
+                                  attributes:attributeDict//传入的字体字典
+                                     context:nil];
+    
+    return rect.size.height;
+}
+
 
 - (CGSize)sizeWithFont:(UIFont *)font {
     return [self sizeWithFont:font maxW:MAXFLOAT];
