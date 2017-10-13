@@ -93,6 +93,8 @@
 // 是否为iOS6,获得系统版本
 #define WTIOS6 ([[UIDevice currentDevice].systemVersion doubleValue] <= 6.1)
 
-#define iPhone4_Screen (WTDeviceHeight == 480 ? 1 : 0)
-#define iPhone6_Screen (WTDeviceWidth == 375 ? 1 : 0)
-#define iPhone6Plus_Screen (WTDeviceWidth == 414 ? 1 : 0)
+#define iPhone5_Screen ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6_Screen ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6Plus_Screen ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define IPHONEX_SCREEN ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO) // 375 * 812
+
