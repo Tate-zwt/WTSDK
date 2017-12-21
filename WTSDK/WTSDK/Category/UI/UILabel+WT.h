@@ -31,4 +31,10 @@
 /** 设置Html代码格式Str与行高 */
 - (void)htmlString:(NSString *)htmlStr labelRowOfHeight:(CGFloat)height;
 
+
+/** 设置行距 */
+- (void)setText:(NSString*)text lineSpacing:(CGFloat)lineSpacing;
+
+/** 计算label的行高 */
++ (CGFloat)text:(NSString*)text heightWithFontSize:(CGFloat)fontSize width:(CGFloat)width lineSpacing:(CGFloat)lineSpacing;
 @end

@@ -12,4 +12,10 @@
 /** 插入NSAttributedString */
 - (void)insertAttributedText:(NSAttributedString *)text;
 - (void)insertAttributedText:(NSAttributedString *)text settingBlock:(void (^)(NSMutableAttributedString *attributedText))settingBlock;
+
+/** 设置行距 */
+- (void)setText:(NSString*)text lineSpacing:(CGFloat)lineSpacing;
+
+/** 计算TextView的行高 */
++ (CGFloat)text:(NSString*)text heightWithFontSize:(CGFloat)fontSize width:(CGFloat)width lineSpacing:(CGFloat)lineSpacing;
 @end
