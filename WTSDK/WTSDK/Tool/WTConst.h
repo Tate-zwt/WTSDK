@@ -48,10 +48,10 @@
 #define WTAppDelegate ((AppDelegate *) [[UIApplication sharedApplication] delegate])
 #define WTUserDefaults [NSUserDefaults standardUserDefaults]
 
-#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
-#define kNavBarHeight 44.0
-#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
-#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+#define KStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define KNavBarHeight 44.0
+#define KTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define KTopHeight (KStatusBarHeight + KNavBarHeight)
 
 //状态栏高度
 #define WTStatus_Bar_Height [[UIApplication sharedApplication] statusBarFrame].size.height
