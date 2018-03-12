@@ -10,6 +10,18 @@
 
 @implementation UIButton (WT)
 
+
++ (UIButton *)frame:(CGRect)frame title:(NSString *)title font:(UIFont *)font color:(UIColor *)color addView:(UIView *)addView{
+    UIButton *_ = [[UIButton alloc] initWithFrame:frame];
+    if (color) {
+        [_ setTitleColor:color forState:UIControlStateNormal];
+    }
+    [_ setTitle:title forState:UIControlStateNormal];
+    _.titleLabel.font = font;
+    [addView addSubview:_];
+    return _;
+}
+
 - (void)startWithTime:(NSInteger)timeLine title:(NSString *)title countDownTitle:(NSString *)subTitle mainColor:(UIColor *)mColor countColor:(UIColor *)color {
 
     // 倒计时时间

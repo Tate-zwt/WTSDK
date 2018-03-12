@@ -11,7 +11,7 @@
 @interface UILabel (WT)
 
 /** 创建一个 */
-+ (UILabel *)newSingleFrame:(CGRect)frame title:(NSString *)title fontS:(CGFloat)fonts color:(UIColor *)color;
++ (UILabel *)frame:(CGRect)frame title:(NSString *)title font:(UIFont *)font color:(UIColor *)color line:(NSInteger)line addView:(UIView *)addView;
 
 /** 有删除线的 */
 - (void)delLineStr:(NSString *)string;

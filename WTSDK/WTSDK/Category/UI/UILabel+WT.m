@@ -11,14 +11,15 @@
 
 @implementation UILabel (WT)
 
-+ (UILabel *)newSingleFrame:(CGRect)frame title:(NSString *)title fontS:(CGFloat)fonts color:(UIColor *)color {
++ (UILabel *)frame:(CGRect)frame title:(NSString *)title font:(UIFont *)font color:(UIColor *)color line:(NSInteger)line addView:(UIView *)addView{
     UILabel *_ = [[UILabel alloc] initWithFrame:frame];
-    _.font = [UIFont systemFontOfSize:fonts];
+    _.font = font;
     if (color) {
         _.textColor = color;
     }
     _.text = title;
-    _.numberOfLines = 0;
+    _.numberOfLines = line;
+    [addView addSubview:_];
     return _;
 }
 

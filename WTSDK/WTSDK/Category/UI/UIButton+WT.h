@@ -10,6 +10,9 @@
 
 @interface UIButton (WT)
 
+/** 创建一个Button */
++ (UIButton *)frame:(CGRect)frame title:(NSString *)title font:(UIFont *)font color:(UIColor *)color addView:(UIView *)addView;
+
 /*
  *    倒计时按钮
  *    @param timeLine  倒计时总时间
