@@ -7,7 +7,7 @@
 //
 
 #import "UITextView+WT.h"
-#import "UIView+WT.h"
+
 
 @implementation UITextView (WT)
 

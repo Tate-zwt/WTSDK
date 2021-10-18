@@ -8,6 +8,6 @@ Pod::Spec.new do |spec|
     spec.platform     = :ios, '9.0'
     spec.source       = {:git => 'https://github.com/Tate-zwt/WTSDK.git', :tag => spec.version}
     spec.source_files = 'WTSDK/**/*.{h,m}'
-    # spec.resource     = 'MJRefresh/MJRefresh.bundle'
     spec.requires_arc = true
+    spec.frameworks = 'UIKit', 'Foundation', 'CoreFoundation','CoreText', 'QuartzCore', 'Accelerate', 'MobileCoreServices'
 end

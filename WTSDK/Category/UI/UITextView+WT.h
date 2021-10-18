@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIView+WT.h"
 @interface UITextView (WT)
 /** 插入NSAttributedString */
 - (void)insertAttributedText:(NSAttributedString *)text;
