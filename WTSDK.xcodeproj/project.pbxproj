@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DABD1CD271D7686007236F8 /* UITextView+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DABD1CC271D7686007236F8 /* UITextView+WT.m */; };
 		5DCF0649271D6400008382A3 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0639271D63FF008382A3 /* TestViewController.m */; };
 		5DCF064A271D6400008382A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF063B271D63FF008382A3 /* Assets.xcassets */; };
 		5DCF064B271D6400008382A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF063C271D63FF008382A3 /* ViewController.m */; };
@@ -37,8 +36,6 @@
 
 /* Begin PBXFileReference section */
 		57C10D0E1C20F61F00511EBC /* WTSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DABD1CB271D7686007236F8 /* UITextView+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+WT.h"; sourceTree = "<group>"; };
-		5DABD1CC271D7686007236F8 /* UITextView+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+WT.m"; sourceTree = "<group>"; };
 		5DCF0639271D63FF008382A3 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		5DCF063A271D63FF008382A3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DCF063B271D63FF008382A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,8 +154,6 @@
 		5DCF0654271D6409008382A3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5DABD1CB271D7686007236F8 /* UITextView+WT.h */,
-				5DABD1CC271D7686007236F8 /* UITextView+WT.m */,
 				5DCF065C271D6409008382A3 /* CALayer+WT.h */,
 				5DCF0663271D6409008382A3 /* CALayer+WT.m */,
 				5DCF0660271D6409008382A3 /* Checkmark_failure_white@2x.png */,
@@ -323,7 +318,6 @@
 				5DCF0649271D6400008382A3 /* TestViewController.m in Sources */,
 				5DCF0691271D6C6D008382A3 /* MBProgressHUD.m in Sources */,
 				5DCF068D271D640A008382A3 /* WTUtility.m in Sources */,
-				5DABD1CD271D7686007236F8 /* UITextView+WT.m in Sources */,
 				5DCF0689271D640A008382A3 /* NSTimer+WT.m in Sources */,
 				5DCF0685271D640A008382A3 /* UIView+WT.m in Sources */,
 				5DCF0683271D640A008382A3 /* CALayer+WT.m in Sources */,

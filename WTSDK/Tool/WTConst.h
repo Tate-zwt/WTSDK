@@ -20,7 +20,7 @@
 #import "UIBarButtonItem+WT.h"
 #import "UIImage+WT.h"
 #import "UILabel+WT.h"
-#import "UITextView+WT.h"
+//#import "UITextView+WT.h"
 #import "UIView+WT.h"
 #import "UIViewController+WT.h"
 
