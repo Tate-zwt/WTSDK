@@ -15,7 +15,6 @@
 		5DCF064E271D6400008382A3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0642271D63FF008382A3 /* MBProgressHUD.m */; };
 		5DCF064F271D6400008382A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0644271D63FF008382A3 /* main.m */; };
 		5DCF0650271D6400008382A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0646271D63FF008382A3 /* AppDelegate.m */; };
-		5DCF0651271D6400008382A3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF0647271D63FF008382A3 /* Info.plist */; };
 		5DCF067C271D640A008382A3 /* Checkmark_success_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF0655271D6409008382A3 /* Checkmark_success_white@2x.png */; };
 		5DCF067D271D640A008382A3 /* UITextView+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0659271D6409008382A3 /* UITextView+WT.m */; };
 		5DCF067E271D640A008382A3 /* UIButton+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF065D271D6409008382A3 /* UIButton+WT.m */; };
@@ -296,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DCF067C271D640A008382A3 /* Checkmark_success_white@2x.png in Resources */,
-				5DCF0651271D6400008382A3 /* Info.plist in Resources */,
 				5DCF064D271D6400008382A3 /* Main.storyboard in Resources */,
 				5DCF064A271D6400008382A3 /* Assets.xcassets in Resources */,
 				5DCF064C271D6400008382A3 /* LaunchScreen.storyboard in Resources */,
@@ -441,8 +439,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WTSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				INFOPLIST_FILE = "$(SRCROOT)/WTSDKExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.zwt.com.WTSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,8 +451,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WTSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				INFOPLIST_FILE = "$(SRCROOT)/WTSDKExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.zwt.com.WTSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
