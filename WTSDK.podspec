@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = 'WTSDK'
-    spec.version      = '1.0.0'
+    spec.version      = '1.0.2'
     spec.summary      = '开发项目积累的一些category、tools、自定义控件（OC版本）'
     spec.homepage     = 'https://github.com/Tate-zwt/WTSDK.git'
     spec.license      = 'MIT'
