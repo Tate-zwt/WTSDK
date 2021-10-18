@@ -4,8 +4,8 @@
 详情进入blog中查看：http://www.jianshu.com/p/ec1684b0fad9
 
 ### CocoaPods
-
+```
 target '<Your Target Name>' do
     pod 'WTSDK'
 end
-
+```
