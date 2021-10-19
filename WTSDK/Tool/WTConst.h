@@ -22,7 +22,6 @@
 #import "UILabel+WT.h"
 #import "UITextView+WT.h"
 #import "UIView+WT.h"
-#import "UIViewController+WT.h"
 
 //tool
 #import "WTUtility.h"

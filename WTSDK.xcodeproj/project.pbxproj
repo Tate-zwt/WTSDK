@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5D3EC954271EA18100F72541 /* UITextView+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3EC953271EA18100F72541 /* UITextView+WT.m */; };
-		5D3EC978271EB06800F72541 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3EC976271EB06700F72541 /* MBProgressHUD.m */; };
 		5DCF0649271D6400008382A3 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0639271D63FF008382A3 /* TestViewController.m */; };
 		5DCF064A271D6400008382A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF063B271D63FF008382A3 /* Assets.xcassets */; };
 		5DCF064B271D6400008382A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF063C271D63FF008382A3 /* ViewController.m */; };
@@ -19,7 +18,6 @@
 		5DCF067C271D640A008382A3 /* Checkmark_success_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF0655271D6409008382A3 /* Checkmark_success_white@2x.png */; };
 		5DCF067E271D640A008382A3 /* UIButton+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF065D271D6409008382A3 /* UIButton+WT.m */; };
 		5DCF067F271D640A008382A3 /* UIBarButtonItem+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF065E271D6409008382A3 /* UIBarButtonItem+WT.m */; };
-		5DCF0680271D640A008382A3 /* UIViewController+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF065F271D6409008382A3 /* UIViewController+WT.m */; };
 		5DCF0681271D640A008382A3 /* Checkmark_failure_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF0660271D6409008382A3 /* Checkmark_failure_white@2x.png */; };
 		5DCF0682271D640A008382A3 /* UIImage+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0662271D6409008382A3 /* UIImage+WT.m */; };
 		5DCF0683271D640A008382A3 /* CALayer+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0663271D6409008382A3 /* CALayer+WT.m */; };
@@ -39,8 +37,6 @@
 		57C10D0E1C20F61F00511EBC /* WTSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3EC952271EA18100F72541 /* UITextView+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+WT.h"; sourceTree = "<group>"; };
 		5D3EC953271EA18100F72541 /* UITextView+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+WT.m"; sourceTree = "<group>"; };
-		5D3EC976271EB06700F72541 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		5D3EC977271EB06700F72541 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		5DCF0639271D63FF008382A3 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		5DCF063A271D63FF008382A3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DCF063B271D63FF008382A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,14 +50,12 @@
 		5DCF0648271D6400008382A3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5DCF0655271D6409008382A3 /* Checkmark_success_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark_success_white@2x.png"; sourceTree = "<group>"; };
 		5DCF0656271D6409008382A3 /* UIBarButtonItem+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WT.h"; sourceTree = "<group>"; };
-		5DCF0657271D6409008382A3 /* UIViewController+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WT.h"; sourceTree = "<group>"; };
 		5DCF0658271D6409008382A3 /* UIImage+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WT.h"; sourceTree = "<group>"; };
 		5DCF065A271D6409008382A3 /* UIView+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WT.h"; sourceTree = "<group>"; };
 		5DCF065B271D6409008382A3 /* UILabel+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WT.h"; sourceTree = "<group>"; };
 		5DCF065C271D6409008382A3 /* CALayer+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+WT.h"; sourceTree = "<group>"; };
 		5DCF065D271D6409008382A3 /* UIButton+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WT.m"; sourceTree = "<group>"; };
 		5DCF065E271D6409008382A3 /* UIBarButtonItem+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WT.m"; sourceTree = "<group>"; };
-		5DCF065F271D6409008382A3 /* UIViewController+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WT.m"; sourceTree = "<group>"; };
 		5DCF0660271D6409008382A3 /* Checkmark_failure_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark_failure_white@2x.png"; sourceTree = "<group>"; };
 		5DCF0662271D6409008382A3 /* UIImage+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WT.m"; sourceTree = "<group>"; };
 		5DCF0663271D6409008382A3 /* CALayer+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+WT.m"; sourceTree = "<group>"; };
@@ -113,15 +107,6 @@
 				57C10D0E1C20F61F00511EBC /* WTSDK.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5D3EC975271EB06700F72541 /* MBProgress */ = {
-			isa = PBXGroup;
-			children = (
-				5D3EC976271EB06700F72541 /* MBProgressHUD.m */,
-				5D3EC977271EB06700F72541 /* MBProgressHUD.h */,
-			);
-			path = MBProgress;
 			sourceTree = "<group>";
 		};
 		5DCF0638271D63FF008382A3 /* WTSDKExample */ = {
@@ -181,8 +166,6 @@
 				5DCF0665271D6409008382A3 /* UILabel+WT.m */,
 				5DCF065A271D6409008382A3 /* UIView+WT.h */,
 				5DCF0666271D6409008382A3 /* UIView+WT.m */,
-				5DCF0657271D6409008382A3 /* UIViewController+WT.h */,
-				5DCF065F271D6409008382A3 /* UIViewController+WT.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -218,7 +201,6 @@
 		5DCF0677271D6409008382A3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				5D3EC975271EB06700F72541 /* MBProgress */,
 				5DCF0678271D6409008382A3 /* WTConst.h */,
 				5DCF0679271D640A008382A3 /* Singleton.h */,
 				5DCF067A271D640A008382A3 /* WTUtility.h */,
@@ -316,13 +298,11 @@
 				5DCF0687271D640A008382A3 /* NSDate+WT.m in Sources */,
 				5DCF067F271D640A008382A3 /* UIBarButtonItem+WT.m in Sources */,
 				5DCF064F271D6400008382A3 /* main.m in Sources */,
-				5DCF0680271D640A008382A3 /* UIViewController+WT.m in Sources */,
 				5DCF0684271D640A008382A3 /* UILabel+WT.m in Sources */,
 				5DCF068A271D640A008382A3 /* WTLabel.m in Sources */,
 				5DCF067E271D640A008382A3 /* UIButton+WT.m in Sources */,
 				5DCF0649271D6400008382A3 /* TestViewController.m in Sources */,
 				5DCF068D271D640A008382A3 /* WTUtility.m in Sources */,
-				5D3EC978271EB06800F72541 /* MBProgressHUD.m in Sources */,
 				5D3EC954271EA18100F72541 /* UITextView+WT.m in Sources */,
 				5DCF0689271D640A008382A3 /* NSTimer+WT.m in Sources */,
 				5DCF0685271D640A008382A3 /* UIView+WT.m in Sources */,
