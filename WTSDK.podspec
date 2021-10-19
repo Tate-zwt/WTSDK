@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = 'WTSDK'
-    spec.version      = '1.0.5'
+    spec.version      = '1.0.6'
     spec.summary      = '开发项目积累的一些category、tools、自定义控件（OC版本）'
     spec.homepage     = 'https://github.com/Tate-zwt/WTSDK.git'
     spec.license      = 'MIT'
@@ -10,7 +10,15 @@ Pod::Spec.new do |spec|
     spec.requires_arc = true
     spec.frameworks = 'UIKit', 'Foundation', 'CoreFoundation','CoreText', 'QuartzCore', 'Accelerate', 'MobileCoreServices'
     
+    # 资源文件引用
+    # spec.resources             = "WTSDK/source.bundle"
+    # spec.resources             = "WTSDK/images/*.png"
+    
+    # 引用所有文件不分模块（文件夹）
     # spec.source_files = 'WTSDK/**/*.{h,m}'
+
+    spec.source_files = 'WTSDK/Tool/WTConst.h'
+
     #可以看到通过subspec可以区分出不同的模块,而且模块间也能依赖
     spec.subspec 'Category' do |c|
          c.source_files = 'WTSDK/Category/*.{h,m}', 
